@@ -132,6 +132,49 @@ Your branch is up to date with 'origin/main'.
 PR на `feature-1`:
 ● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.
 
+bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-1
+
+Switched to branch 'feature-1'
+
+bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
+
+bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git status 
+
+On branch feature-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   feature.html
+
+bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "change file feature.html"
+
+[feature-1 a63f650] change file feature.html
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+ 
+bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git push origin feature-1
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 379 bytes | 126.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature-1' on GitHub by visiting:
+remote:      https://github.com/Bekmukhambetov/devops_lesson_2_git/pull/new/feature-1
+remote: 
+To github.com:Bekmukhambetov/devops_lesson_2_git.git
+ * [new branch]      feature-1 -> feature-1
+
+![image](https://github.com/user-attachments/assets/db43b780-0564-4564-a4e2-d3e84fb474d9)
+
+
 Злиття Pull Request:
 ● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.
+
+![image](https://github.com/user-attachments/assets/c7531a15-7c16-46d7-af46-eccb6dfe4a65)
+
+![image](https://github.com/user-attachments/assets/5e1c6a78-7668-473b-9d17-424f02709fbb)
+
+
 
