@@ -2,7 +2,7 @@
 1. Налаштовано доступ по SSH ключу
    ![image](https://github.com/user-attachments/assets/bf2d6125-5db2-489c-9136-5dd3b7b77bf5)
 
-Варіант 1. Репозиторій створював через WEB
+Репозиторій створював через WEB
 
 Далі клонував в wsl через термінал в visual studio code.
 
@@ -19,5 +19,4 @@ git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
 
 ![image](https://github.com/user-attachments/assets/67245bc1-8a0d-4363-85d1-a357362893b2)
 
-
-Варіант 2. Репозиторій створював через CLI
+4. Створення гілок `feature-1` та `feature-2`
