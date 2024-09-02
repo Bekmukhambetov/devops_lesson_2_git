@@ -112,14 +112,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
 **● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).**
 
-_пропустив на даному єтапі зробити це завдання (git squash), тому роблю його вже з іншими комітами_ 
-```
-git rebase -i HEAD~7
-
-```
-![image](https://github.com/user-attachments/assets/f70d48fa-997d-4649-a893-cf0690d7fd3d)
-![image](https://github.com/user-attachments/assets/7271ff38-33df-4b5b-9c21-c9915ffd571b)
-
+_пропустив на даному єтапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додаю в кінець_ 
 
 ```
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
@@ -143,9 +136,6 @@ CONFLICT (add/add): Merge conflict in feature.html
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
-
-_тут в мене якась дурня вийшла, тому що з першого разу не заскрінив і скрін нижче це вже результат другої зміни гілки feature-2 і другого merge_
-![image](https://github.com/user-attachments/assets/8ccf9503-eccf-481b-88fc-41a37fdf6935)
 
 PR на `feature-1`:
 **● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
@@ -204,5 +194,29 @@ _Злиття Pull Request:_
 ![image](https://github.com/user-attachments/assets/0358f306-98a2-43fe-9555-6cdb31d289ce)
 ![image](https://github.com/user-attachments/assets/cc9bb783-a4b5-407c-8941-199a8f916928)
 
+**git squash**
+```
+git rebase -i HEAD~7
+[detached HEAD dd60e88] Update README.md
+ Author: Vadym <107219053+Bekmukhambetov@users.noreply.github.com>
+ Date: Mon Sep 2 16:28:50 2024 +0300
+ 1 file changed, 30 insertions(+), 8 deletions(-)
+[detached HEAD c74bbc7] change file feature.html
+ Date: Mon Sep 2 16:46:05 2024 +0300
+ 2 files changed, 66 insertions(+), 62 deletions(-)
+Successfully rebased and updated refs/heads/main.
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git push --force
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.42 KiB | 825.00 KiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To github.com:Bekmukhambetov/devops_lesson_2_git.git
+ + 17908c8...c74bbc7 main -> main (forced update)
 
+```
+![image](https://github.com/user-attachments/assets/f70d48fa-997d-4649-a893-cf0690d7fd3d)
+![image](https://github.com/user-attachments/assets/7271ff38-33df-4b5b-9c21-c9915ffd571b)
 
