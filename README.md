@@ -3,6 +3,7 @@
    ![image](https://github.com/user-attachments/assets/bf2d6125-5db2-489c-9136-5dd3b7b77bf5)
 
 Варіант 1. Репозиторій створював через WEB
+
 Далі клонував в wsl через термінал в visual studio code.
 
 git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
