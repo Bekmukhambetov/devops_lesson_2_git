@@ -75,10 +75,10 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge feature-1
-Updating 4d6172b..fdd3023
+Updating 5834cf8..05092ae
 Fast-forward
- feature.html | 13 +++++++++++++
- 1 file changed, 13 insertions(+)
+ feature.html | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
  create mode 100644 feature.html
 ```
 
@@ -119,12 +119,14 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   feature.html
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-2"
-[feature-2 31a06fd] add file feature.html in branch feature-2
- 1 file changed, 14 insertions(+)
+[feature-2 a1eea4a] add file feature.html in branch feature-2
+ 1 file changed, 17 insertions(+)
  create mode 100644 feature.html
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
 Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git merge feature-2
 Auto-merging feature.html
 CONFLICT (add/add): Merge conflict in feature.html
@@ -132,8 +134,28 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
 
-_тут в мене якась дурня вийшла, тому що з першого разу не заскрінив і скрін нижче це вже результат другої зміни гілки feature-2 і другого merge_
-![image](https://github.com/user-attachments/assets/8ccf9503-eccf-481b-88fc-41a37fdf6935)
+![image](https://github.com/user-attachments/assets/887be7a7-fd73-45d6-a019-d7bfb8f3f479)
+```
+bekmukhambetov@ZenBook:~$ cd devops/devops_lesson_2_git/
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ nano feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add .
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   feature.html
+
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "marge feature"
+[main 25cde2a] marge feature
+```
+![image](https://github.com/user-attachments/assets/e3d1bef9-4fce-46d2-b002-e888ec23c96f)
+
 
 PR на `feature-1`:
 **● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
