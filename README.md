@@ -53,7 +53,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
 </head>
 <body>
     <div class="container">
-        <h1>Feature1</h1>  #зміна тут
+        <h1>Feature1</h1>  
         <button>Feature1</button>
     </div>
     <div class="container">
@@ -99,7 +99,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
 </head>
 <body>
     <div class="container">
-        <h1>Feature2</h1>
+        <h1>Feature2</h1>   #зміна тут
         <button>Feature2</button>  #зміна тут
     </div>
     <div class="container">
