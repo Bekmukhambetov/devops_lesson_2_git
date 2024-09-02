@@ -15,6 +15,7 @@ git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
 ![image](https://github.com/user-attachments/assets/5f4593fc-2819-42aa-8d26-853c3e78e69d)
 
 _Створення завдання:_
+
 **● Закиньте у “main/master” скрипти з попередніх завдань.**
 Створення файлу в локальному репозиторії
    
@@ -26,6 +27,7 @@ _Створення завдання:_
 ![image](https://github.com/user-attachments/assets/67245bc1-8a0d-4363-85d1-a357362893b2)
 
 _Створення гілок:_
+
 **● Створіть дві фіч-гілки: `feature-1` та `feature-2` з мастеру.**
 ```
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-1
@@ -158,6 +160,7 @@ To github.com:Bekmukhambetov/devops_lesson_2_git.git
 
 ```
 _Злиття Pull Request:_
+
 **● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.**
 
 ![image](https://github.com/user-attachments/assets/db43b780-0564-4564-a4e2-d3e84fb474d9)
