@@ -173,8 +173,11 @@ To github.com:Bekmukhambetov/devops_lesson_2_git.git
 ● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.
 
 ![image](https://github.com/user-attachments/assets/c7531a15-7c16-46d7-af46-eccb6dfe4a65)
+![image](https://github.com/user-attachments/assets/454723fb-f5a1-49bc-9c95-a2c10b41cd4b)
+
 
 ![image](https://github.com/user-attachments/assets/5e1c6a78-7668-473b-9d17-424f02709fbb)
 
+![image](https://github.com/user-attachments/assets/adea1841-905a-4556-a587-f6d627f61676)
 
 
