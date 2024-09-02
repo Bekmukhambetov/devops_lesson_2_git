@@ -107,29 +107,28 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
         <button>Feature</button>
     </div>
 </body>
-```
-
-**● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
-у вашій гілці в результаті має бути один коміт (git squash).**
-
-_пропустив на даному єтапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додаю в кінець_ 
-
-```
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git status 
 On branch feature-2
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   feature.html
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-2"
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-2"
 [feature-2 31a06fd] add file feature.html in branch feature-2
  1 file changed, 14 insertions(+)
  create mode 100644 feature.html
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout main 
 Switched to branch 'main'
 Your branch and 'origin/main' have diverged,
 and have 1 and 2 different commits each, respectively.
   (use "git pull" to merge the remote branch into yours)
+```
+
+**● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
+у вашій гілці в результаті має бути один коміт (git squash).**
+
+
+```
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git merge feature-2
 Auto-merging feature.html
 CONFLICT (add/add): Merge conflict in feature.html
@@ -137,6 +136,9 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
 
+```
+
+```
 PR на `feature-1`:
 **● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
 ```
