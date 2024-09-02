@@ -123,7 +123,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file fea
 **● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).**
 
-_пропустив на даному етапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додаю в кінець_ 
+_пропустив на даному етапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додам в кінці файлу README.md_ 
 
 
 ```
@@ -207,7 +207,7 @@ _Злиття Pull Request:_
 ![image](https://github.com/user-attachments/assets/0358f306-98a2-43fe-9555-6cdb31d289ce)
 ![image](https://github.com/user-attachments/assets/cc9bb783-a4b5-407c-8941-199a8f916928)
 
-**git squash**
+# *git squash**
 ```
 git rebase -i HEAD~7
 [detached HEAD dd60e88] Update README.md
