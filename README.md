@@ -107,17 +107,22 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
 у вашій гілці в результаті має бути один коміт (git squash).
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git status 
+
 On branch feature-2
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   feature.html
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-2"
+
 [feature-2 31a06fd] add file feature.html in branch feature-2
  1 file changed, 14 insertions(+)
  create mode 100644 feature.html
+ 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
+
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
