@@ -76,11 +76,17 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch
 * main
   
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge feature-1
+
 Updating 4d6172b..fdd3023
+
 Fast-forward
+
  feature.html | 13 +++++++++++++
+ 
  1 file changed, 13 insertions(+)
+ 
  create mode 100644 feature.html
+ 
 
 
 Розробка функціональності на `feature-2`:
