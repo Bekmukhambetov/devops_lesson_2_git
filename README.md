@@ -117,18 +117,21 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file fea
 [feature-2 31a06fd] add file feature.html in branch feature-2
  1 file changed, 14 insertions(+)
  create mode 100644 feature.html
-bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout main 
-Switched to branch 'main'
-Your branch and 'origin/main' have diverged,
-and have 1 and 2 different commits each, respectively.
-  (use "git pull" to merge the remote branch into yours)
+
 ```
 
 **● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).**
 
+_пропустив на даному етапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додаю в кінець_ 
+
 
 ```
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout main 
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git merge feature-2
 Auto-merging feature.html
 CONFLICT (add/add): Merge conflict in feature.html
