@@ -136,14 +136,21 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-1
 
 Switched to branch 'feature-1'
 
+![image](https://github.com/user-attachments/assets/8a786208-35ea-469e-8bb3-e3ce4a4fc4e3)
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git status 
 
+
 On branch feature-1
+
 Changes to be committed:
+
   (use "git restore --staged <file>..." to unstage)
+  
         modified:   feature.html
+        
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "change file feature.html"
 
