@@ -123,7 +123,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file fea
 **● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).**
 
-_пропустив на даному етапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додам в кінці файлу README.md[GitHub Pages]([https://pages.github.com/](https://github.com/Bekmukhambetov/devops_lesson_2_git#git-squash))_ 
+_пропустив на даному етапі зробити це завдання (git squash), тому роблю його вже з іншими комітами і додам в кінці файлу [README.md](https://github.com/Bekmukhambetov/devops_lesson_2_git?tab=readme-ov-file#git-squash)_ 
 
 
 ```
