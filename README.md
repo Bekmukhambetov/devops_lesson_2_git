@@ -1,6 +1,6 @@
 # devops_lesson_2_git
 Створення репозиторію та доступи:
-● Створіть репозиторій, налаштуйте доступ за допомогою ssh.
+**● Створіть репозиторій, налаштуйте доступ за допомогою ssh.**
 Налаштовано доступ по SSH ключу
    ![image](https://github.com/user-attachments/assets/bf2d6125-5db2-489c-9136-5dd3b7b77bf5)
 
@@ -13,7 +13,7 @@ git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
 ![image](https://github.com/user-attachments/assets/5f4593fc-2819-42aa-8d26-853c3e78e69d)
 
 Створення завдання:
-● Закиньте у “main/master” скрипти з попередніх завдань.
+**● Закиньте у “main/master” скрипти з попередніх завдань.**
 Створення файлу в локальному репозиторії
    
 ![image](https://github.com/user-attachments/assets/14d40709-1754-4df3-916f-3b03214a3f5c)
@@ -24,7 +24,7 @@ git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
 ![image](https://github.com/user-attachments/assets/67245bc1-8a0d-4363-85d1-a357362893b2)
 
 Створення гілок:
-● Створіть дві фіч-гілки: `feature-1` та `feature-2` з мастеру.
+**● Створіть дві фіч-гілки: `feature-1` та `feature-2` з мастеру.**
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-1
 
@@ -32,8 +32,8 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-2
 
 Розробка функціональності на feature-1:
 
-● Розробіть окрему функціональність для кожної фічі на відповідних гілках.
-● Це може бути довільний файл з вільним змістом.
+**● Розробіть окрему функціональність для кожної фічі на відповідних гілках.
+● Це може бути довільний файл з вільним змістом.**
 Merge feature-1 у “main/master”:
 
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-1 
@@ -57,7 +57,7 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feat
  create mode 100644 feature.html
  
 
-● Залийте зміни з feature-1 у “main/master” за допомогою merge.
+**● Залийте зміни з feature-1 у “main/master” за допомогою merge.**
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
 
@@ -73,7 +73,7 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch
 
   feature-1
   feature-2
-* main
+  main
   
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge feature-1
 
@@ -91,7 +91,7 @@ Fast-forward
 
 Розробка функціональності на `feature-2`:
 
-● Внесіть зміни у тому ж рядку на гілці `feature-2`, де були зміни на гілці `feature-1`.
+**● Внесіть зміни у тому ж рядку на гілці `feature-2`, де були зміни на гілці `feature-1`.**
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-2 
 
@@ -103,8 +103,8 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
 
 ![image](https://github.com/user-attachments/assets/9eadcfce-2349-485e-9b03-bae47ac6f87c)
 
-● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
-у вашій гілці в результаті має бути один коміт (git squash).
+**● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
+у вашій гілці в результаті має бути один коміт (git squash).**
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
 
@@ -126,12 +126,12 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
-● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)
+**● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
+
 ![image](https://github.com/user-attachments/assets/8ccf9503-eccf-481b-88fc-41a37fdf6935)
 
 PR на `feature-1`:
-● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.
-
+**● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-1
 
 Switched to branch 'feature-1'
@@ -171,12 +171,12 @@ remote: Create a pull request for 'feature-1' on GitHub by visiting:
 remote:      https://github.com/Bekmukhambetov/devops_lesson_2_git/pull/new/feature-1
 remote: 
 To github.com:Bekmukhambetov/devops_lesson_2_git.git
- * [new branch]      feature-1 -> feature-1
+  [new branch]      feature-1 -> feature-1
 
 
 
 Злиття Pull Request:
-● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.
+**● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.**
 
 ![image](https://github.com/user-attachments/assets/db43b780-0564-4564-a4e2-d3e84fb474d9)
 ![image](https://github.com/user-attachments/assets/c7531a15-7c16-46d7-af46-eccb6dfe4a65)
