@@ -121,9 +121,14 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feat
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git merge feature-2
+Auto-merging feature.html
+CONFLICT (add/add): Merge conflict in feature.html
+Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
 
+_тут в мене якась дурня вийшла, тому що з першого разу не заскрінив і скрін нижче це вже результат другої зміни гілки feature-2 і другого merge_
 ![image](https://github.com/user-attachments/assets/8ccf9503-eccf-481b-88fc-41a37fdf6935)
 
 PR на `feature-1`:
