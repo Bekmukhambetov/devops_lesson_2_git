@@ -135,10 +135,18 @@ CONFLICT (add/add): Merge conflict in feature.html
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
-
+![image](https://github.com/user-attachments/assets/84cd09c4-f7d4-4624-be2b-e0eae7b36807)
+```
+bekmukhambetov@ZenBook:~/devops$ cd devops_lesson_2_git/
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ nano feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "merge branch feature-2"
+[main 5373840] merge branch feature-2
 ```
 
-```
+![image](https://github.com/user-attachments/assets/2f528809-224c-44e5-9297-505cda94c070)
+![image](https://github.com/user-attachments/assets/30e7fcc0-b4fc-4157-b93f-e3cbbd8a550f)
+
 PR на `feature-1`:
 **● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
 ```
