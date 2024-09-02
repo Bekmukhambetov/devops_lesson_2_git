@@ -30,8 +30,8 @@ _Створення гілок:_
 
 **● Створіть дві фіч-гілки: `feature-1` та `feature-2` з мастеру.**
 ```
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-1
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-2
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git branch feature-1
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git branch feature-2
 ```
 _Розробка функціональності на feature-1:_
 
@@ -41,8 +41,8 @@ Merge feature-1 у “main/master”:
 ```
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-1 
 Switched to branch 'feature-1'
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ touch feature.html
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ touch feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,8 +62,8 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
     </div>
 </body>
 
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-1"
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-1"
 [feature-1 fdd3023] add file feature.html in branch feature-1
  1 file changed, 13 insertions(+)
  create mode 100644 feature.html
@@ -71,11 +71,11 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feat
 
 **● Залийте зміни з feature-1 у “main/master” за допомогою merge.**
 ```
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout main 
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge feature-1
-Updating 5834cf8..05092ae
+Updating 4d6172b..fdd3023
 Fast-forward
  feature.html | 17 +++++++++++++++++
  1 file changed, 17 insertions(+)
@@ -86,10 +86,10 @@ _Розробка функціональності на `feature-2`:_
 
 **● Внесіть зміни у тому ж рядку на гілці `feature-2`, де були зміни на гілці `feature-1`.**
 ```
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-2 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-2 
 Switched to branch 'feature-1'
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ touch feature.html
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ touch feature.html
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,16 +111,26 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
 
 **● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).**
+
+_пропустив на даному єтапі зробити це завдання (git squash), тому роблю його вже з іншими комітами_ 
 ```
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git status 
+git rebase -i HEAD~7
+
+```
+![image](https://github.com/user-attachments/assets/f70d48fa-997d-4649-a893-cf0690d7fd3d)
+![image](https://github.com/user-attachments/assets/7271ff38-33df-4b5b-9c21-c9915ffd571b)
+
+
+```
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git status 
 On branch feature-2
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   feature.html
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-2"
-[feature-2 a1eea4a] add file feature.html in branch feature-2
- 1 file changed, 17 insertions(+)
+[feature-2 31a06fd] add file feature.html in branch feature-2
+ 1 file changed, 14 insertions(+)
  create mode 100644 feature.html
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
 Switched to branch 'main'
@@ -134,71 +144,65 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 **● Спробуйте вирішити конфлікт декількома способами (як в IDE так і з консолі)**
 
-![image](https://github.com/user-attachments/assets/887be7a7-fd73-45d6-a019-d7bfb8f3f479)
-```
-bekmukhambetov@ZenBook:~$ cd devops/devops_lesson_2_git/
-bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ nano feature.html
-bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add .
-bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git status
-On branch main
-Your branch and 'origin/main' have diverged,
-and have 1 and 3 different commits each, respectively.
-  (use "git pull" to merge the remote branch into yours)
-
-All conflicts fixed but you are still merging.
-  (use "git commit" to conclude merge)
-
-Changes to be committed:
-        modified:   feature.html
-
-bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "marge feature"
-[main 25cde2a] marge feature
-```
-![image](https://github.com/user-attachments/assets/e3d1bef9-4fce-46d2-b002-e888ec23c96f)
-
+_тут в мене якась дурня вийшла, тому що з першого разу не заскрінив і скрін нижче це вже результат другої зміни гілки feature-2 і другого merge_
+![image](https://github.com/user-attachments/assets/8ccf9503-eccf-481b-88fc-41a37fdf6935)
 
 PR на `feature-1`:
 **● Внесіть нові зміни на гілці `feature-1` та спробуйте злити з головною гілкою шляхом Pull Request.**
 ```
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-1
 Switched to branch 'feature-1'
-```
-![image](https://github.com/user-attachments/assets/8a786208-35ea-469e-8bb3-e3ce4a4fc4e3)
-```
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git status 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pull-Requests</h1>
+        <button>Pull-Requests</button>
+    </div>
+    <div class="container">
+        <h1>Feature</h1>
+        <button>Feature</button>
+    </div>
+</body>
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git status 
 On branch feature-1
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   feature.html
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "change file feature.html"
-[feature-1 a63f650] change file feature.html
- 1 file changed, 9 insertions(+), 1 deletion(-)
-bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git push origin feature-1
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "change file feature.html"
+[feature-1 bbf54dd] change file feature.html
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git push origin feature-1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 379 bytes | 126.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 857 bytes | 857.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
 remote: 
 remote: Create a pull request for 'feature-1' on GitHub by visiting:
 remote:      https://github.com/Bekmukhambetov/devops_lesson_2_git/pull/new/feature-1
 remote: 
 To github.com:Bekmukhambetov/devops_lesson_2_git.git
-  [new branch]      feature-1 -> feature-1
-
+ * [new branch]      feature-1 -> feature-1
 ```
 _Злиття Pull Request:_
 
 **● Перевірте, що у вас більше немає помилок у вашому Pull Request, та злийте його у головну гілку.**
 
-![image](https://github.com/user-attachments/assets/db43b780-0564-4564-a4e2-d3e84fb474d9)
-![image](https://github.com/user-attachments/assets/c7531a15-7c16-46d7-af46-eccb6dfe4a65)
-![image](https://github.com/user-attachments/assets/454723fb-f5a1-49bc-9c95-a2c10b41cd4b)
-![image](https://github.com/user-attachments/assets/adea1841-905a-4556-a587-f6d627f61676)
-![image](https://github.com/user-attachments/assets/5e1c6a78-7668-473b-9d17-424f02709fbb)
+![image](https://github.com/user-attachments/assets/c724add9-cdda-4871-a1fd-ab6eabf9749b)
+![image](https://github.com/user-attachments/assets/f1294f81-5288-4b4d-a3e9-4c24965d56b4)
+![image](https://github.com/user-attachments/assets/5e17c4aa-2e00-4a1e-aa32-fa153917c5e4)
+![image](https://github.com/user-attachments/assets/0358f306-98a2-43fe-9555-6cdb31d289ce)
+![image](https://github.com/user-attachments/assets/cc9bb783-a4b5-407c-8941-199a8f916928)
 
 
 
