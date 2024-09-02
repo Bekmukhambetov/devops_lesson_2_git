@@ -25,37 +25,56 @@ git clone git@github.com:Bekmukhambetov/devops_lesson_2_git.git
 
 Створення гілок:
 ● Створіть дві фіч-гілки: `feature-1` та `feature-2` з мастеру.
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-1
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch feature-2
 
-
 Розробка функціональності на feature-1:
+
 ● Розробіть окрему функціональність для кожної фічі на відповідних гілках.
 ● Це може бути довільний файл з вільним змістом.
 Merge feature-1 у “main/master”:
 
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-1 
+
 Switched to branch 'feature-1'
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ touch feature.html
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html 
+
  ![image](https://github.com/user-attachments/assets/6f2b7e38-a894-4e48-85a1-8f5873235912)
    
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git add feature.html 
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-1"
+
 [feature-1 fdd3023] add file feature.html in branch feature-1
+
  1 file changed, 13 insertions(+)
+ 
  create mode 100644 feature.html
+ 
 
 ● Залийте зміни з feature-1 у “main/master” за допомогою merge.
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout main 
+
 Switched to branch 'main'
+
 Your branch is up to date with 'origin/main'.
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge future-1
+
 merge: future-1 - not something we can merge
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git branch
+
   feature-1
   feature-2
 * main
+  
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git merge feature-1
 Updating 4d6172b..fdd3023
 Fast-forward
@@ -65,12 +84,17 @@ Fast-forward
 
 
 Розробка функціональності на `feature-2`:
+
 ● Внесіть зміни у тому ж рядку на гілці `feature-2`, де були зміни на гілці `feature-1`.
 
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ git checkout feature-2 
+
 Switched to branch 'feature-1'
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ touch feature.html
+
 bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html 
+
 ![image](https://github.com/user-attachments/assets/9eadcfce-2349-485e-9b03-bae47ac6f87c)
 
 ● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
