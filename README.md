@@ -38,20 +38,8 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-1
 Switched to branch 'feature-1'
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ touch feature.html
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Demo1</h1>
-        <button>Get Data from Backend1</button>
-    </div>
-</body>
-^[^C          
+ ![image](https://github.com/user-attachments/assets/6f2b7e38-a894-4e48-85a1-8f5873235912)
+   
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git add feature.html 
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git commit -m "add file feature.html in branch feature-1"
 [feature-1 fdd3023] add file feature.html in branch feature-1
@@ -83,25 +71,7 @@ bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ git checkout feature-2
 Switched to branch 'feature-1'
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ touch feature.html
 bekmukhambetov@ZenBook:~/devops/devops_lesson_2_git$ cat > feature.html 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Demo</h1>
-        <button>Get Data from Backend</button>
-    </div>
-	<div class="container">
-        <h1>Demo2</h1>
-        <button>Get Data from Backend2</button>
-    </div>
-</body>
-^[^C  
-
+![image](https://github.com/user-attachments/assets/9eadcfce-2349-485e-9b03-bae47ac6f87c)
 
 ● Спробуйте злити `feature-2` з головною гілкою та розв'яжіть виниклі конфлікти, також
 у вашій гілці в результаті має бути один коміт (git squash).
