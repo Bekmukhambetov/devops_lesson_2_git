@@ -53,8 +53,12 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
 </head>
 <body>
     <div class="container">
-        <h1>Demo1</h1>
-        <button>Get Data from Backend1</button>
+        <h1>Feature1</h1>
+        <button>Feature1</button>
+    </div>
+    <div class="container">
+        <h1>Feature</h1>
+        <button>Feature</button>
     </div>
 </body>
 
@@ -95,12 +99,12 @@ bekmukhambetov@ZenBook:/devops/devops_lesson_2_git$ cat > feature.html
 </head>
 <body>
     <div class="container">
-        <h1>Demo_1</h1>
-        <button>Get Data from Backend_1</button>
+        <h1>Feature2</h1>
+        <button>Feature2</button>
     </div>
     <div class="container">
-        <h1>Demo_2</h1>
-        <button>Get Data from Backend_2</button>
+        <h1>Feature</h1>
+        <button>Feature</button>
     </div>
 </body>
 ```
